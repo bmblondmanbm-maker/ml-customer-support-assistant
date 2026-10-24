@@ -1,0 +1,11 @@
+torch
+transformers
+datasets
+scikit-learn
+pandas
+numpy
+sentence-transformers
+langgraph
+langchain-core
+groq
+pydantic>=2

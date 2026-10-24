@@ -1,0 +1,38 @@
+{
+  "all_passed": true,
+  "additional_search_calls": 2,
+  "scenarios": [
+    {
+      "scenario": "High-confidence intent",
+      "query_type": "intent",
+      "route": "distilbert_high_confidence",
+      "human_review": false,
+      "final_answer": "Intent: activate_my_card",
+      "passed": true
+    },
+    {
+      "scenario": "Low-confidence intent",
+      "query_type": "intent",
+      "route": "human_review",
+      "human_review": true,
+      "final_answer": "Request requires human review.",
+      "passed": true
+    },
+    {
+      "scenario": "Document RAG direct success",
+      "query_type": "document",
+      "route": null,
+      "human_review": false,
+      "final_answer": "According to the internal policy, employees must follow the documented procedure.",
+      "passed": true
+    },
+    {
+      "scenario": "Document RAG + additional search",
+      "query_type": "document",
+      "route": "document_rag",
+      "human_review": false,
+      "final_answer": "The full internal policy allows the requested action.",
+      "passed": true
+    }
+  ]
+}

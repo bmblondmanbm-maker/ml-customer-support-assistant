@@ -1,0 +1,61 @@
+{
+  "all_passed": true,
+  "tests": {
+    "account_tool_success": true,
+    "product_tool_success": true,
+    "unknown_tool_rejected": true,
+    "invalid_arguments_rejected": true,
+    "tool_registry_exposed": true,
+    "json_serializable": true
+  },
+  "available_tools": [
+    "get_account_status",
+    "get_product_info"
+  ],
+  "examples": {
+    "account_tool": {
+      "ok": true,
+      "tool_name": "get_account_status",
+      "result": {
+        "tool": "get_account_status",
+        "account_id": "ACC-1001",
+        "status": "active",
+        "source": "mock_internal_service"
+      }
+    },
+    "product_tool": {
+      "ok": true,
+      "tool_name": "get_product_info",
+      "result": {
+        "tool": "get_product_info",
+        "product_name": "Premium Card",
+        "available": true,
+        "source": "mock_internal_catalog"
+      }
+    },
+    "unknown_tool": {
+      "ok": false,
+      "error": "unknown_tool",
+      "tool_name": "delete_everything"
+    },
+    "invalid_arguments": {
+      "ok": false,
+      "error": "invalid_arguments",
+      "tool_name": "get_account_status",
+      "details": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "account_id"
+          ],
+          "msg": "String should have at least 3 characters",
+          "input": "",
+          "ctx": {
+            "min_length": 3
+          },
+          "url": "https://errors.pydantic.dev/2.14/v/string_too_short"
+        }
+      ]
+    }
+  }
+}

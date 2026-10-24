@@ -1,0 +1,62 @@
+{
+  "all_passed": true,
+  "schema": "AssistantResponse",
+  "valid_routes": [
+    "distilbert_high_confidence",
+    "low_confidence_consensus",
+    "document_rag",
+    "human_review"
+  ],
+  "tests": {
+    "intent_response_valid": true,
+    "rag_response_valid": true,
+    "rag_source_preserved": true,
+    "human_review_valid": true,
+    "invalid_output_rejected": true,
+    "json_serialization": true
+  },
+  "invalid_example_rejected": true,
+  "invalid_error_type": "ValidationError",
+  "examples": {
+    "intent": {
+      "query_type": "intent",
+      "route": "distilbert_high_confidence",
+      "answer": "Intent: activate_my_card",
+      "needs_human_review": false,
+      "intent": {
+        "intent_id": 10,
+        "intent_name": "activate_my_card",
+        "confidence": 0.97,
+        "accepted": true
+      },
+      "sources": []
+    },
+    "document_rag": {
+      "query_type": "document",
+      "route": "document_rag",
+      "answer": "According to the internal policy, employees must follow the documented procedure.",
+      "needs_human_review": false,
+      "intent": null,
+      "sources": [
+        {
+          "doc_id": "DOC_002",
+          "chunk_id": "CHUNK_010",
+          "similarity": 0.91
+        }
+      ]
+    },
+    "human_review": {
+      "query_type": "intent",
+      "route": "human_review",
+      "answer": "Request requires human review.",
+      "needs_human_review": true,
+      "intent": {
+        "intent_id": 20,
+        "intent_name": "cash_withdrawal",
+        "confidence": 0.4,
+        "accepted": false
+      },
+      "sources": []
+    }
+  }
+}

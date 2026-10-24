@@ -1,0 +1,39 @@
+{
+  "evaluation_policy": "single final test evaluation after validation decisions were frozen",
+  "models": {
+    "distilbert_accuracy": 0.9255526657997399,
+    "distilbert_macro_f1": 0.9254666446797233,
+    "distilbert_weighted_f1": 0.9255102592249342,
+    "retrieval_hit@1": 0.9141742522756827,
+    "retrieval_hit@3": 0.9548114434330299,
+    "retrieval_hit@5": 0.9671651495448634
+  },
+  "reject_baseline": {
+    "system": "DistilBERT + reject threshold",
+    "threshold": 0.65,
+    "n": 3076,
+    "auto_closed": 2890,
+    "coverage": 0.9395318595578673,
+    "human_review": 186,
+    "review_rate": 0.06046814044213264,
+    "automatic_accuracy": 0.9522491349480969,
+    "automatic_errors": 138
+  },
+  "langgraph": {
+    "system": "LangGraph selective consensus",
+    "distilbert_threshold": 0.65,
+    "retrieval_similarity_threshold": 1.0,
+    "n": 3076,
+    "auto_closed": 2890,
+    "coverage": 0.9395318595578673,
+    "human_review": 186,
+    "review_rate": 0.06046814044213264,
+    "automatic_accuracy": 0.9522491349480969,
+    "automatic_errors": 138,
+    "extra_closed_vs_baseline": 0,
+    "routes": {
+      "distilbert_high_confidence": 2890,
+      "human_review": 186
+    }
+  }
+}

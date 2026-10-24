@@ -1,0 +1,3 @@
+System,Threshold,"Coverage, %","Automatic accuracy, %","Human review, %",Automatic errors,Auto-closed
+DistilBERT + reject threshold,0.65,93.95,95.22,6.05,138,2890
+Frozen LangGraph,0.65,93.95,95.22,6.05,138,2890

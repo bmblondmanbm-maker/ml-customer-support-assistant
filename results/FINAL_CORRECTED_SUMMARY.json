@@ -1,0 +1,132 @@
+{
+  "protocol": {
+    "seed": 42,
+    "train_part_size": 8494,
+    "val_part_size": 1499,
+    "test_size": 3076,
+    "n_classes": 77,
+    "policy": {
+      "train_part": "fit models and build retrieval corpus",
+      "val_part": "threshold selection, diagnostic analysis and architecture selection",
+      "test": "single final evaluation after all decisions were frozen"
+    }
+  },
+  "final_configuration": {
+    "distilbert_model": "distilbert-base-uncased",
+    "distilbert_epochs": 6,
+    "best_validation_checkpoint": "checkpoint-1330",
+    "selected_threshold_from_validation": 0.65,
+    "semantic_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "retrieval_similarity_gate": 1.0,
+    "langgraph_policy": "high-confidence DistilBERT auto-close; low-confidence auto-close only when DistilBERT and retrieval agree and retrieval similarity passes frozen gate; otherwise human review"
+  },
+  "validation": {
+    "tfidf": {
+      "accuracy": 0.8418945963975984,
+      "macro_f1": 0.8335601596036762
+    },
+    "distilbert": {
+      "accuracy": 0.9079386257505003,
+      "macro_f1": 0.9054720948092247
+    },
+    "semantic_retrieval": {
+      "hit@1": 0.9026017344896597,
+      "hit@3": 0.95263509006004,
+      "hit@5": 0.9699799866577719
+    },
+    "reject_baseline": {
+      "system": "DistilBERT + reject threshold",
+      "threshold": 0.65,
+      "n": 1499,
+      "auto_closed": 1390,
+      "coverage": 0.9272848565710473,
+      "human_review": 109,
+      "review_rate": 0.07271514342895263,
+      "automatic_accuracy": 0.9503597122302159,
+      "automatic_errors": 69
+    },
+    "langgraph": {
+      "system": "LangGraph selective consensus",
+      "distilbert_threshold": 0.65,
+      "retrieval_similarity_threshold": 1.0,
+      "selection_dataset": "val_part",
+      "n": 1499,
+      "auto_closed": 1390,
+      "coverage": 0.9272848565710473,
+      "human_review": 109,
+      "review_rate": 0.07271514342895263,
+      "automatic_accuracy": 0.9503597122302159,
+      "automatic_errors": 69,
+      "extra_closed_vs_baseline": 0,
+      "accepted_consensus_accuracy": null,
+      "target_automatic_accuracy": 0.95,
+      "test_used": false
+    }
+  },
+  "final_test": {
+    "evaluation_policy": "single final test evaluation after validation decisions were frozen",
+    "models": {
+      "distilbert_accuracy": 0.9255526657997399,
+      "distilbert_macro_f1": 0.9254666446797233,
+      "distilbert_weighted_f1": 0.9255102592249342,
+      "retrieval_hit@1": 0.9141742522756827,
+      "retrieval_hit@3": 0.9548114434330299,
+      "retrieval_hit@5": 0.9671651495448634
+    },
+    "reject_baseline": {
+      "system": "DistilBERT + reject threshold",
+      "threshold": 0.65,
+      "n": 3076,
+      "auto_closed": 2890,
+      "coverage": 0.9395318595578673,
+      "human_review": 186,
+      "review_rate": 0.06046814044213264,
+      "automatic_accuracy": 0.9522491349480969,
+      "automatic_errors": 138
+    },
+    "langgraph": {
+      "system": "LangGraph selective consensus",
+      "distilbert_threshold": 0.65,
+      "retrieval_similarity_threshold": 1.0,
+      "n": 3076,
+      "auto_closed": 2890,
+      "coverage": 0.9395318595578673,
+      "human_review": 186,
+      "review_rate": 0.06046814044213264,
+      "automatic_accuracy": 0.9522491349480969,
+      "automatic_errors": 138,
+      "extra_closed_vs_baseline": 0,
+      "routes": {
+        "distilbert_high_confidence": 2890,
+        "human_review": 186
+      }
+    }
+  },
+  "document_rag_api_qa": {
+    "evaluation_set": {
+      "generation": "30 questions generated through Groq API from randomly selected document chunks",
+      "generator_model": "openai/gpt-oss-120b",
+      "n_examples": 30,
+      "used_for_rag_tuning": false
+    },
+    "retrieval": {
+      "source_accuracy": 0.9666666666666667,
+      "chunk_hit_at_1": 0.6666666666666666,
+      "chunk_hit_at_3": 0.9333333333333333,
+      "runtime_errors": 0
+    },
+    "answer_quality": {
+      "answer_accuracy_llm_judge": 0.9333333333333333,
+      "groundedness_rate": 0.7666666666666667,
+      "mean_judge_score": 3.7,
+      "judge_success_rate": 1.0,
+      "overall_rag_success": 0.7666666666666667
+    }
+  },
+  "conclusions": {
+    "distilbert": "Final 6-epoch model substantially outperformed the 1-epoch debug model.",
+    "selective_baseline": "Validation-selected confidence threshold preserved at least 95% automatic accuracy while maintaining high coverage.",
+    "langgraph": "The tested low-confidence consensus route did not provide additional safe coverage under the >=95% automatic-accuracy constraint. The validation-optimal frozen LangGraph therefore reduced to the DistilBERT reject baseline.",
+    "document_rag": "Document RAG was evaluated on an API-generated held-out QA benchmark rather than on manually tuned questions."
+  }
+}

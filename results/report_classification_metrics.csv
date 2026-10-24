@@ -1,0 +1,6 @@
+Metric,Validation,Final Test
+DistilBERT Accuracy,90.79,92.56
+DistilBERT Macro F1,90.55,92.55
+Semantic Retrieval Hit@1,90.26,91.42
+Semantic Retrieval Hit@3,95.26,95.48
+Semantic Retrieval Hit@5,97.0,96.72

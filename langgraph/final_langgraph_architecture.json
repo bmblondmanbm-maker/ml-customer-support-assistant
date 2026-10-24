@@ -1,0 +1,17 @@
+{
+  "system": "LangGraph selective consensus",
+  "distilbert_threshold": 0.65,
+  "retrieval_similarity_threshold": 1.0,
+  "selection_dataset": "val_part",
+  "n": 1499,
+  "auto_closed": 1390,
+  "coverage": 0.9272848565710473,
+  "human_review": 109,
+  "review_rate": 0.07271514342895263,
+  "automatic_accuracy": 0.9503597122302159,
+  "automatic_errors": 69,
+  "extra_closed_vs_baseline": 0,
+  "accepted_consensus_accuracy": null,
+  "target_automatic_accuracy": 0.95,
+  "test_used": false
+}

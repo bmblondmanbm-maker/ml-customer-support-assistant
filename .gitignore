@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv/
+venv/
+
+# Secrets
+*.key
+.env.*
+
+# Models / checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+checkpoints/
+models/
+
+# Large datasets
+*.parquet
+*.arrow
+
+# Colab / local
+/content/
+drive/
+
+# OS
+.DS_Store
+Thumbs.db

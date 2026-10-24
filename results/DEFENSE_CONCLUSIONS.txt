@@ -1,0 +1,82 @@
+ИТОГОВЫЕ ВЫВОДЫ ПРОЕКТА
+
+1. Классификация намерений
+
+Финальная модель DistilBERT была обучена на train_part
+в течение 6 эпох с выбором лучшего checkpoint
+по Macro F1 на validation.
+
+На финальном test:
+Accuracy = 92.56%
+Macro F1 = 92.55%
+
+
+2. Selective classification
+
+Порог confidence 0.65
+был выбран исключительно на validation.
+
+На test:
+Coverage = 93.95%
+Automatic accuracy = 95.22%
+Human review rate = 6.05%
+
+
+3. Semantic retrieval
+
+На финальном test:
+Hit@1 = 91.42%
+Hit@3 = 95.48%
+Hit@5 = 96.72%
+
+
+4. LangGraph
+
+На validation была проверена схема selective consensus:
+для low-confidence запросов semantic retrieval
+сравнивался с предсказанием DistilBERT.
+
+При ограничении automatic accuracy >= 95%
+дополнительная consensus-ветка не обеспечила
+безопасного прироста coverage.
+
+Поэтому финальная frozen-конфигурация LangGraph
+совпадает по метрикам с baseline
+DistilBERT + reject threshold.
+
+Это является экспериментальным результатом:
+усложнение архитектуры не всегда повышает
+качество системы при фиксированном SLA по точности.
+
+
+5. Document RAG
+
+Document RAG оценивался на независимом наборе
+из 30 QA-примеров,
+сгенерированных через API из случайно выбранных chunks.
+
+QA benchmark не использовался для настройки RAG.
+
+Source accuracy = 96.67%
+Chunk Hit@1 = 66.67%
+Chunk Hit@3 = 93.33%
+Answer accuracy = 93.33%
+Groundedness = 76.67%
+Mean judge score = 3.70/4
+Overall RAG success = 76.67%
+
+
+6. Evaluation protocol
+
+train_part:
+обучение моделей и построение retrieval corpus.
+
+val_part:
+выбор confidence threshold и архитектуры.
+
+test:
+однократная финальная оценка после фиксации
+всех параметров.
+
+После просмотра результатов test
+параметры системы не изменялись.

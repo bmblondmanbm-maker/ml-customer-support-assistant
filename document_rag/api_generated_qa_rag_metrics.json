@@ -1,0 +1,7 @@
+{
+  "n_examples": 30,
+  "source_accuracy": 0.9666666666666667,
+  "chunk_hit_at_1": 0.6666666666666666,
+  "chunk_hit_at_3": 0.9333333333333333,
+  "runtime_errors": 0
+}

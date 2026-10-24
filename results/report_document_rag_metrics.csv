@@ -1,0 +1,8 @@
+Metric,Value,Unit
+Source accuracy,96.67,%
+Chunk Hit@1,66.67,%
+Chunk Hit@3,93.33,%
+Answer accuracy (LLM judge),93.33,%
+Groundedness,76.67,%
+Mean judge score,3.7,/ 4
+Overall RAG success,76.67,%

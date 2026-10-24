@@ -1,0 +1,110 @@
+text,true_label,distilbert_pred,distilbert_confidence,retrieval_pred,retrieval_similarity,consensus,consensus_correct
+"Needed gas, been delayed for half an hour.Please fix it!",47,20,0.1315406113862991,47,0.4920579195022583,False,False
+"I saw on the app that a cash withdrawal was completed on my account; however, I did not complete it.",20,46,0.5175310969352722,20,0.937658965587616,False,False
+I tried to top up and suddenly my money disappeared,62,61,0.6413646936416626,62,0.966505765914917,False,False
+"While I was drunk, I goofed my PIN number and your machine ate my card. How can I get it back?",49,49,0.4996092915534973,18,0.7520254850387573,False,False
+What cards do you support,54,54,0.5689133405685425,54,0.7873884439468384,True,True
+i tried to do a transfer to an account but it didn't work,7,7,0.6229825019836426,35,0.8924819827079773,False,False
+I need a new card.,39,43,0.4797921776771545,39,0.9305188059806824,False,False
+How do I top up?,65,58,0.4413084089756012,62,0.9341330528259277,False,False
+I withdraw money abroad but I didn't get the right amount.,76,75,0.638248860836029,76,0.8135578632354736,False,False
+are you sending me my card?,12,11,0.5416098833084106,11,0.7610619068145752,True,False
+Can I withdraw money from another bank and transfer it into my empty account?,65,65,0.3892983198165893,65,0.844844400882721,True,True
+I am trying  to  transfer and  it has been  stopped why is  that,7,7,0.6265250444412231,7,0.7970607280731201,True,True
+It's been a couple days how much longer do I have to wait for my transfer?,67,48,0.4242791533470154,48,0.8899540901184082,True,False
+How can I deposit money to my account?,65,65,0.5382606983184814,65,0.9436973333358765,True,True
+"If I were to do a transfer, what is the rate for that?",56,50,0.2913165986537933,56,0.8257611393928528,False,False
+When will my transfer process?,5,67,0.6188210844993591,5,0.9217438101768494,False,False
+"I'm going on holiday to France for 6 weeks with my family and the cat, Fluffy.  I just purchased €10,000 from a currency exchange to ensure we don't run short but there appears to be a fee.  What is this for?",15,64,0.4892024099826813,34,0.754142165184021,False,False
+"I have checked the account information several times to be sure that it is correct, but the in country transfer I did a few days ago still has not appeared! What is the hold up?",66,66,0.5299593210220337,66,0.8729230165481567,True,True
+The wait for this transfer seems to be taking a very long time.  It is very important that it goes through quickly. Can you please tell me how long it may take?,48,48,0.5261309742927551,66,0.8741059303283691,False,False
+I have a new email.,30,42,0.2775836288928985,30,0.5509043335914612,False,False
+How did the extra charge on my card come in effect?,15,34,0.4959853291511535,15,0.9021651744842529,False,False
+"Hello, a few days ago I transferred my rent check to my landlord, however, he is saying that it has not gone though. On my end everything looks fine and I double checked the account number. Is there anything else that could be holding up the check?",66,6,0.457461953163147,66,0.7432718873023987,False,False
+Are there any express fees if i want my new card faster?,9,12,0.5908071398735046,39,0.7255678176879883,False,False
+I used my card top-up but all of the money is missing.,62,62,0.475126713514328,62,0.9213063716888428,True,True
+I transferred some money a couple days ago but haven't received it yet. How long should I expect to wait?,5,66,0.483321875333786,5,0.8634727597236633,False,False
+I got my card a few days ago but am unable to top up. I'm thinking about closing my account because of this. What is going on?,59,59,0.619274377822876,59,0.7779531478881836,True,True
+Hi - I have made a transaction to my new landlord but unfortunately it shows on my end but not on the landlord's end. The numbers are correct. Can you confirm when that will go through?,66,66,0.5619730353355408,66,0.6991971135139465,True,True
+how do the cards work?,37,14,0.2667488753795624,38,0.6821436882019043,False,False
+What is the cause of the delay in applying my card payment to my account?,45,25,0.3525933623313904,45,0.7805360555648804,False,False
+"Could you refund my transaction, I paid it into the wrong account. I need to be able to pay it into the right account by tomorrow.",8,8,0.5124760866165161,8,0.8349328637123108,True,True
+Did I do something incorrectly? Where is my top-up?,47,61,0.5243965983390808,47,0.8502827882766724,False,False
+I lost my card n need a new one.,41,39,0.5083093643188477,41,0.8470817804336548,False,False
+What are the rules for using disposable virtual cards?,29,29,0.5093923211097717,29,0.9005815982818604,True,True
+I sees some suspicious spending on my credit card that I don't recall I had made. What should I do?,22,20,0.4830337166786194,16,0.7283916473388672,False,False
+I would like to use one of my cards for a family member. Is that allowed?,39,39,0.3374431431293487,39,0.7553545236587524,True,True
+Why does it still charge me even though I was unable to withdraw money from the ATM?,46,26,0.5701876282691956,19,0.8546468615531921,False,False
+I refuse to verify my identity.,74,68,0.5258328914642334,68,0.8610714673995972,True,False
+I have an unauthorized charge.,28,22,0.5708081126213074,16,0.6904966831207275,False,False
+how do i track the moeney,70,38,0.1625357419252395,11,0.5285158157348633,False,False
+Why can I not make a transfer?,35,7,0.49721160531044,35,0.9794452786445618,False,False
+"I saw money was taken out of my account by a seller a while back. I do not recognize the seller, but I'm pretty certain I didn't make that payment. Can you track who the seller is?",28,28,0.6423630118370056,28,0.8794634938240051,True,True
+Where do I scan my card?,13,11,0.2100584357976913,11,0.7353540062904358,True,False
+I am worried that too much time has gone by for a transfer to be completed.,66,66,0.5013744235038757,67,0.7415066957473755,False,False
+which identity details are required,74,74,0.5872726440429688,69,0.8676478862762451,False,False
+Do you allow currency exchanges?,36,32,0.3733739852905273,36,0.8191109299659729,False,False
+am suspicious of my card's security,22,41,0.5999758243560791,22,0.8282018303871155,False,False
+What is this fee showing up in my account for?,15,34,0.4714714288711548,34,0.8335944414138794,True,False
+I withdrew  money from the ATM and was overcharged.  It said nothing about an extra fee.,76,19,0.608005940914154,19,0.8640631437301636,True,False
+Can I setup top ups in advance?,4,4,0.5928033590316772,4,0.7697325348854065,True,True
+Why did the funds not transfer to another recipient?,66,66,0.4940564334392547,66,0.8132081627845764,True,True
+WHAT IS THE ATMOSPHERE OF IT,10,70,0.1304897964000702,3,0.2153884321451187,False,False
+How can I link my bank to my top up account?,65,65,0.5413398146629333,65,0.8222391605377197,True,True
+"new customer and filling gas for the first time today, not working,",47,35,0.378459095954895,62,0.49443089962005615,False,False
+Why is my transfer taking so long to complete?,66,35,0.4739475846290588,66,0.9335693120956421,False,False
+What are my payment options for topping off my account?,58,54,0.3530336022377014,54,0.7934491634368896,True,False
+what currencies can i exchange between on your app?,33,33,0.5747756958007812,33,0.9440993070602417,True,True
+How to I switch my money for the money used in another country?,33,33,0.4970804750919342,33,0.7608593106269836,True,True
+Is there a way to make my money usable in another country?,33,24,0.5746017694473267,36,0.7395360469818115,False,False
+is there something blocking me from making transfers,7,35,0.4436942636966705,7,0.8513816595077515,False,False
+I did a topup successfully but its not showing in balance. I think there is some problem in system.,61,61,0.5624239444732666,61,0.7476648092269897,True,True
+My card stopped working. How do I check if there is a freeze on it?,14,25,0.3802064061164856,14,0.7790720462799072,False,False
+Are there any limits to were my card is accepted?,10,10,0.6164894104003906,10,0.9086015224456787,True,True
+Where did my top-up go? I can't find it in my wallet,62,62,0.4577825963497162,62,0.8336496353149414,True,True
+How soon do cards arrive after I order them?,12,12,0.4832794368267059,12,0.9093436598777771,True,True
+how to get new card?,23,43,0.4888621866703033,23,0.9852042198181152,False,False
+What cards do you offer?,73,54,0.3029230833053589,39,0.758161723613739,False,False
+I tried using my card at multiple vendors and now it's not working.,14,25,0.541654646396637,14,0.8192203044891357,False,False
+can i use my mastercard to add money to my account,54,73,0.612926185131073,73,0.7879739999771118,True,False
+how should i add money to my card,57,62,0.5388073325157166,62,0.9636827707290649,True,False
+I made a transfer recently but it has not changed on my dashboard.,48,5,0.5506587624549866,8,0.7146275043487549,False,False
+How come my money hasn't shown up yet?,66,6,0.6208205819129944,5,0.787996232509613,False,False
+want a new card what are the fees,9,39,0.5514541268348694,39,0.8562058210372925,True,False
+Why was my transaction not approved?,35,66,0.5387900471687317,66,0.7362403273582458,True,False
+"I'm trying to make a payment to my new landlord. Even though the payment was sent a few days ago, it isn't clearing on their side. Can you verify that payment has been made?",66,66,0.4790877997875213,66,0.7698169946670532,True,True
+What do I need to do in order to use my card I just got?,0,0,0.3852518200874328,43,0.8716892004013062,False,False
+How do I to up by card?,62,62,0.3987680673599243,62,0.8104021549224854,True,True
+I think the currency exchange that's been applied is wrong.,17,76,0.64194256067276,17,0.8043526411056519,False,False
+Will you be adding more currencies in the future?,36,36,0.5902703404426575,54,0.71495521068573,False,False
+When I was drunk I got my card stuck in your machine because i mis-typed my PIN. What do I need to do to get it restored?,49,49,0.5084391832351685,49,0.7403417229652405,True,True
+Will my card work at all merchant locations?,10,25,0.3490511476993561,10,0.7175811529159546,False,False
+Why am I still waiting for a transfer?,5,48,0.5008043646812439,66,0.8326713442802429,False,False
+I checked on google and the exchange rate you are using is really bad. Can you update it?,17,17,0.5901696085929871,17,0.8094154596328735,True,True
+What is the first step I need to make for being able to access my account?,74,55,0.4505327939987182,44,0.7354692220687866,False,False
+Can I see where my money is being transferred from?,70,5,0.5800279378890991,70,0.8435227870941162,False,False
+How long does it take to get a refund on something I bought?,52,52,0.627936840057373,51,0.8517351150512695,False,False
+Where is my top-up generated from?,70,60,0.4083718955516815,62,0.7622482776641846,False,False
+"Three months ago I bought a new house for my cat, fluffy.  Unfortunately Fluffy was not a fan of the house and it had to be returned to Pet Smart last week.  They said they have sent a refund but it's not there, can you tell me where it is?",51,53,0.3837987184524536,51,0.5851237773895264,False,False
+Why was my top-up declined?,61,61,0.5330458283424377,59,0.882140040397644,False,False
+Why didn't my payment process,45,25,0.4403811395168304,7,0.9058043956756592,False,False
+What is the procedure for depositing a virtual card,37,40,0.5763927102088928,37,0.89612877368927,False,False
+My card is showing the same transaction over and over again.,63,63,0.5197134017944336,63,0.7772588133811951,True,True
+How can I tell if an AMT will take this card?,3,24,0.3293561637401581,73,0.563640832901001,False,False
+"It seems like I have been waiting forever for this international transfer. Why is it taking so long? C'mon, it's 2018, things happen at a click of a button. All of the account information is correct, so how long will this take?",48,67,0.5300856828689575,48,0.7905733585357666,False,False
+Something is wrong with my top up and I can't see it. How do I find it?,62,61,0.5634918212890625,62,0.8496426939964294,False,False
+"Is it possible to go ahead and log in, although I have not been confirmed yet?",74,74,0.2676306664943695,74,0.5998642444610596,True,True
+Someone that I had to send money to told me that they didn't receive the full amount I sent them - can you look into this?,64,75,0.5218302607536316,66,0.7653486132621765,False,False
+"I am seeing unathorized transactions in the app, on my account.",20,16,0.4528501629829407,66,0.7253776788711548,False,False
+My top-up was declined,59,59,0.4959707856178283,59,0.8714100122451782,True,True
+There was some money taken from my account that I don't remember paying for. Am I able to look up this transaction which was a few weeks ago to see who took out the money? Im not sure I need a refund just want to check to make sure it's legit.,28,28,0.4039172232151031,28,0.7649431228637695,True,True
+"Why are all my transfers failing?  I have the details right and they won't complete.  I've been trying all day and they still won't go through, this is URGENT, please help.",27,35,0.6006454229354858,35,0.8555548191070557,True,False
+What happens if a merchant doesn't accept  you payment?,53,53,0.5208904147148132,53,0.8127121925354004,True,True
+What are the steps to finishing up with this account?,55,65,0.2956464290618896,65,0.6039711833000183,True,False
+Please help me!  A payment I made had an error on the account number and I can't cancel on my side.  Can you cancel it?,8,53,0.4691130220890045,8,0.8615961074829102,False,False
+Money was transferred to me and I am unable to see it,48,66,0.6252139210700989,5,0.8668068647384644,False,False
+Is currency exchange possible?,33,33,0.609309196472168,33,0.9411301612854004,True,True
+Help! My account doesn't show any funds. Is transferring funds an option I can use?,65,64,0.5091859698295593,5,0.7580255270004272,False,False
+Why does is payment not going through? Did my account get frozen or some other issue I don't know about. What can I do to fix this problem?,25,53,0.5746424794197083,45,0.8479456901550293,False,False
+As far as courtries go which ones are supported?,24,54,0.2723577618598938,24,0.4412616491317749,False,False
+My money I had was gone and I could not get gas!,62,20,0.4031591117382049,62,0.905242383480072,False,False

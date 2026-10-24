@@ -1,0 +1,4 @@
+Stage,Dataset,Size,Purpose
+Training,train_part,8494,Обучение моделей и построение retrieval-корпуса
+Validation,val_part,1499,Выбор threshold и архитектуры
+Final test,test,3076,Однократная финальная оценка после заморозки решений
