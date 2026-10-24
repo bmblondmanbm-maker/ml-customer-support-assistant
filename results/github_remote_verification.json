@@ -3,14 +3,14 @@
   "url": "https://github.com/bmblondmanbm-maker/ml-customer-support-assistant",
   "visibility": "PUBLIC",
   "default_branch": "main",
-  "local_head": "43bdad0956903d2b8ae121d6bfe72d3ba9b0a806",
+  "local_head": "4e2e3b9b9ea8348a440e63885ab6df5403beebfb",
   "remote_head": "43bdad0956903d2b8ae121d6bfe72d3ba9b0a806",
   "checks": {
     "GitHub auth": true,
     "Repository exists": true,
     "Default branch main": true,
     "Main branch available": true,
-    "Local/remote commit match": true,
+    "Local/remote commit match": false,
     "README available": true,
     "All required remote files": true,
     "Local working tree clean": true
@@ -33,5 +33,5 @@
     "assets/intent_inference_flow.md": true,
     "assets/training_evaluation_flow.md": true
   },
-  "all_passed": true
+  "all_passed": false
 }
