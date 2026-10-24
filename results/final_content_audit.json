@@ -1,0 +1,453 @@
+{
+  "required_checks": 59,
+  "required_passed": 59,
+  "required_failed": [],
+  "recommended_warnings": [
+    {
+      "requirement": "Final notebook included",
+      "note": "Сейчас notebook не является обязательным для MLSD, но для учебной/портфолио сдачи его наличие желательно."
+    }
+  ],
+  "legacy_value_occurrences": {
+    "Old threshold 0.90": 0,
+    "Debug threshold 0.50": 0,
+    "Old 100% RAG claim": 0
+  },
+  "notebooks_found": [],
+  "checks": [
+    {
+      "category": "Original task",
+      "requirement": "Employee/internal support assistant",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Original task",
+      "requirement": "Internal documents / regulations / instructions",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Original task",
+      "requirement": "Query type detection",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Original task",
+      "requirement": "Information retrieval",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Original task",
+      "requirement": "Additional search",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Original task",
+      "requirement": "Answer validation",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Original task",
+      "requirement": "Final result / response",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "Python",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "DistilBERT",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "Embeddings",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "Semantic Retrieval",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "RAG",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "LLM",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "LangGraph",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "Structured Output",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "Tool Calling",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "Human Review",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Technology",
+      "requirement": "Vector DB design",
+      "status": "PASS",
+      "importance": "RECOMMENDED",
+      "note": "Допускается как production design, не обязательно как deployed component."
+    },
+    {
+      "category": "Technology",
+      "requirement": "Reranker",
+      "status": "PASS",
+      "importance": "RECOMMENDED",
+      "note": "Может оставаться proposed/future work."
+    },
+    {
+      "category": "Mentor feedback",
+      "requirement": "Threshold/architecture selected on validation, not test",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": "Главное методологическое замечание ментора."
+    },
+    {
+      "category": "Mentor feedback",
+      "requirement": "Document RAG evaluated on API-generated QA",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Mentor feedback",
+      "requirement": "Direct baseline vs LangGraph comparison",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Data protocol",
+      "requirement": "train_part documented",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Data protocol",
+      "requirement": "val_part documented",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Data protocol",
+      "requirement": "test documented",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Data protocol",
+      "requirement": "77 classes documented",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Data protocol",
+      "requirement": "Test used only after decisions frozen",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Final metrics",
+      "requirement": "DistilBERT Accuracy 92.56%",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Final metrics",
+      "requirement": "Macro F1 92.55%",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Final metrics",
+      "requirement": "Threshold 0.65",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Final metrics",
+      "requirement": "Coverage 93.95%",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Final metrics",
+      "requirement": "Automatic Accuracy 95.22%",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Final metrics",
+      "requirement": "RAG Answer Accuracy 93.33%",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Final metrics",
+      "requirement": "RAG Overall Success 76.67%",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "determine_query_type",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "classify_intent",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "semantic_retrieval",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "document_retrieval",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "additional_search",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "validate_answer",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "human_review",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "LangGraph",
+      "requirement": "Smoke-test documented",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 1. Постановка задачи",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 2. Бизнес-цель",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 4. Функциональные требования",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 5. Нефункциональные требования",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 6. Архитектура системы",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 8. Данные",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 9. Training pipeline",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 10. Online inference flow",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 11. Offline metrics",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 12. Online metrics",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 13. Production deployment",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 14. Monitoring",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 15. Retraining strategy",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "MLSD",
+      "requirement": "# 17. Риски",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Reproducibility",
+      "requirement": "requirements.txt",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Reproducibility",
+      "requirement": ".gitignore",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Reproducibility",
+      "requirement": "src/config.py",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Reproducibility",
+      "requirement": "validation/selected_threshold_final.json",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Reproducibility",
+      "requirement": "results/FINAL_CORRECTED_SUMMARY.json",
+      "status": "PASS",
+      "importance": "REQUIRED",
+      "note": ""
+    },
+    {
+      "category": "Repository completeness",
+      "requirement": "Final notebook included",
+      "status": "WARN",
+      "importance": "RECOMMENDED",
+      "note": "Сейчас notebook не является обязательным для MLSD, но для учебной/портфолио сдачи его наличие желательно."
+    }
+  ]
+}

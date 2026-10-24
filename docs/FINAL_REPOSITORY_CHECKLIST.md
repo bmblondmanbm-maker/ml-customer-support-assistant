@@ -37,6 +37,8 @@
 
 ## Reproducibility
 
+- [x] Final Colab notebook
+
 - [x] requirements.txt
 - [x] .gitignore
 - [x] Frozen configuration
@@ -47,6 +49,7 @@
 ## GitHub
 
 - [x] README
+- [x] notebooks/
 - [x] src/
 - [x] results/
 - [x] validation/

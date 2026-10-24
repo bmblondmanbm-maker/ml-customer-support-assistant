@@ -394,3 +394,33 @@ Smoke-test: `results/tool_calling_smoke_test.json`
 - production monitoring / observability stack;
 - интеграция tools с реальными CRM/API;
 - production deployment infrastructure.
+
+---
+
+<!-- FINAL_NOTEBOOK_SECTION -->
+
+# Финальный Colab notebook
+
+В репозиторий добавлена очищенная версия финального экспериментального notebook:
+
+`notebooks/final_project.ipynb`
+
+Перед публикацией notebook был:
+
+- проверен на принадлежность к проекту;
+- просканирован на API keys и tokens;
+- очищен от outputs;
+- очищен от execution counts;
+- сохранён без изменения исходного notebook на Google Drive.
+
+Notebook содержит полный экспериментальный pipeline:
+
+- Banking77 data preparation;
+- DistilBERT training;
+- validation threshold selection;
+- semantic retrieval;
+- LangGraph experiments;
+- final one-time test;
+- Document RAG;
+- API-generated QA evaluation.
+
